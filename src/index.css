@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+  font-weight: bold;
+}
+
+.table-bordered td {
+  vertical-align: middle;
+}
+
+.boton-enviar {
+  background-color: #4CAF50; /* Cambia el color de fondo */
+  border: none; /* Elimina el borde */
+  color: white; /* Cambia el color del texto */
+  padding: 12px 24px; /* Cambia el espacio entre el texto y el borde */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Elimina la subrayado */
+  display: inline-block;
+  font-size: 16px; /* Cambia el tamaño de fuente */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px; /* Agrega una esquina redondeada */
+}
