@@ -55,7 +55,7 @@ const Formulario = ({elementoInventario, setElementoFormulario}) => {
       body: JSON.stringify(elementoInventario),
     }
 
-    fetch("http://localhost:3000/inventariopost", RequestInit)
+    fetch("https://apiinventarioiud-production.up.railway.app/inventariopost", RequestInit)
       .then((res) => res.json())
       .then((res) => console.log(res));
 

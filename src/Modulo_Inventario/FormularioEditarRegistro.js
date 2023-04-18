@@ -6,7 +6,7 @@ const FormularioEditarRegistro = ({ registro, setRegistroAEditar }) => {
   const [descripcion, setDescripcion] = useState(registro.ieq_descripcion || "");
 
   const guardarRegistroEditado = async () => {
-    const response = await fetch(`http://localhost:3000/inventariopatch/` + registro.ieq_idRegInventario, {
+    const response = await fetch(`https://apiinventarioiud-production.up.railway.app/inventariopatch/` + registro.ieq_idRegInventario, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

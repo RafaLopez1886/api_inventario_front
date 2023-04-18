@@ -30,7 +30,7 @@ function AppListado() {
 
   useEffect(() => {
     const getInventarioLista = () => {
-      fetch("http://localhost:3000/inventarioget")
+      fetch("https://apiinventarioiud-production.up.railway.app/inventarioget")
         .then((res) => res.json())
         .then((res) => setListadoFormulario(res))
         .then ((res) => console.log(res));
